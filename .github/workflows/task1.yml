@@ -7,11 +7,13 @@ jobs:
   runs-on: windows-latest
   steps:
    - name: person-details
-     run: 
+     run: | 
        echo "my surname is madamanchi"
+       echo "my name is swarupa Rani"
 
  edudetails:
   runs-on: windows-latest
   steps:
    - name: myeducation
-     run: "i completed masters in computer applications"
+     run:
+      echo "i completed masters in computer applications"
