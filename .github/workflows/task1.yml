@@ -7,10 +7,9 @@ jobs:
   runs-on: windows-latest
   steps:
    - name: person-details
-     run: |
+     run: 
        echo "my surname is madamanchi"
-       echo "my name is swarupa Rani"
-jobs:
+
  edudetails:
   runs-on: windows-latest
   steps:
