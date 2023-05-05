@@ -5,18 +5,18 @@ on:
   - release
   - main
  jobs:
-  name: develop
+  develop:
    runs-on: windows-latest
    steps:
-    -name: printdevelopjob
-     run: echo " its develop job"
-   name: release
-    runs-on: windows-latest
-    steps: 
-     - name: printreleasejob
-       run: echo " its release job"
-   name: main
-    runs-on: windows-latest
-    steps:
-     - name: printmainjob
-       run: echo "its main job"
+    - name: printdevelopjob
+      run: echo "its develop job"
+  release:
+   runs-on: windows-latest
+   steps: 
+    - name: printreleasejob
+      run: echo " its release job"
+  main:
+   runs-on: windows-latest
+   steps:
+    - name: printmainjob
+      run: echo "its main job"
