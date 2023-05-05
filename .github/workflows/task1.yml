@@ -1,0 +1,19 @@
+name: task1
+on:
+ push:
+  branches: [develop]
+jobs:
+ mydetails:
+  runs-on: windows-latest
+  steps:
+   - name: person-details
+     run: | 
+       echo "my surname is madamanchi"
+       echo "my name is swarupa Rani"
+
+ edudetails:
+  runs-on: windows-latest
+  steps:
+   - name: myeducation
+     run:
+      echo "i completed masters in computer applications"
