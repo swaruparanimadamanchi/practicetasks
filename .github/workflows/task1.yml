@@ -7,6 +7,10 @@ jobs:
  mydetails:
   runs-on: windows-latest
   steps:
+   - name: getsecreatid
+     run: |
+      echo "the secreat would be covered"
+      echo $(( secrets.MY_REPO_ID ))
    - name: person-details
      run: | 
        echo "my surname is madamanchi"
