@@ -19,3 +19,13 @@ jobs:
    - name: myeducation
      run:
       echo "i completed masters in computer applications"
+ emp_details:
+  needs: [mydetails,edudetails]  
+  runs-on: windows-latest
+  steps:
+   - name: employee
+     run: |
+      echo " empid: 462059"
+      echo " emailid: madamanchi.swarupa-rani@capgemini.com"
+      echo "grade : B1"   
+
