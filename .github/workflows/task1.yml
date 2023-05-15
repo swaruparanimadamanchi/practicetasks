@@ -13,6 +13,7 @@ jobs:
        echo "my name is swarupa Rani"
 
  edudetails:
+  needs: mydetails
   runs-on: windows-latest
   steps:
    - name: myeducation
