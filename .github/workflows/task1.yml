@@ -24,7 +24,7 @@ jobs:
      run:
       echo "i completed masters in computer applications"
  emp_details:
-  needs: [mydetails,edudetails]  
+  needs: edudetails  
   runs-on: windows-latest
   steps:
    - name: employee
